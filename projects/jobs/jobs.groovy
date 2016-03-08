@@ -12,14 +12,24 @@ def projectFolder = folder(projectFolderName)
 def enableFolderName = projectFolderName + "/Features_to_Enable";
 def enableFolder = folder(enableFolderName) { displayName('Features to Enable') }
 
-def dpf_FolderName = projectFolderName + "/Default_Project_Feature"
-def dpf_Folder = folder(dpf_FolderName) { displayName('Default Project Feature') }
+def dpf_FolderName = projectFolderName + "/HCM_Project_with_Default_Features"
+def dpf_Folder = folder(dpf_FolderName) { displayName('HCM Project with Default Features') }
 
 def ha_FolderName = projectFolderName + "/HCM_Automation"
 def ha_Folder = folder(ha_FolderName) { displayName('HCM Automation') }
 
 def aftp_FolderName = projectFolderName + "/Apply_Feature_to_Project"
 def aftp_Folder = folder(aftp_FolderName) { displayName('Apply Feature to Project') }
+
+// HCM Features Manager
+
+def hfm_FolderName = projectFolderName + "/HCM_Features_Manager"
+def hfm_Folder = folder(aftp_FolderName) { displayName('HCM Features Manager') }
+
+def md_FolderName = projectFolderName + hfm_FolderName + "/Manage_Department"
+def md_Folder = folder(md_FolderName) { displayName('Manage Department') }
+
+// End of HFM
 
 def cartridgeManagementFolderName= projectFolderName + "/Cartridge_Management"
 def cartridgeManagementFolder = folder(cartridgeManagementFolderName) { displayName('Cartridge Management') }

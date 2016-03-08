@@ -9,6 +9,9 @@ def workspaceFolderName = "${WORKSPACE_NAME}"
 def projectFolderName = workspaceFolderName + "/${PROJECT_NAME}"
 def projectFolder = folder(projectFolderName)
 
+def enableFolderName = projectFolderName + "/Features_to_Enable";
+def enableFolder = folder(enableFolderName) { displayName('Features to Enable') }
+
 def cartridgeManagementFolderName= projectFolderName + "/Cartridge_Management"
 def cartridgeManagementFolder = folder(cartridgeManagementFolderName) { displayName('Cartridge Management') }
 

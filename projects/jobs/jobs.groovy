@@ -18,6 +18,9 @@ def dpf_Folder = folder(defaultProjectName) { displayName('Default Project Featu
 def ha_FolderName = projectFolderName + "/HCM_Automation"
 def ha_Folder = folder(defaultProjectName) { displayName('HCM Automation') }
 
+def aftp_FolderName = projectFolderName + "/Apply_Feature_to_Project"
+def aftp_Folder = folder(defaultProjectName) { displayName('Apply Feature to Project') }
+
 def cartridgeManagementFolderName= projectFolderName + "/Cartridge_Management"
 def cartridgeManagementFolder = folder(cartridgeManagementFolderName) { displayName('Cartridge Management') }
 

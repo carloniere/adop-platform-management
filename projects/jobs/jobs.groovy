@@ -24,7 +24,10 @@ def aftp_Folder = folder(aftp_FolderName) { displayName('Apply Feature to Projec
 // HCM Features Manager
 
 def hfm_FolderName = projectFolderName + "/HCM_Features_Manager"
-def hfm_Folder = folder(aftp_FolderName) { displayName('HCM Features Manager') }
+def hfm_Folder = folder(hfm_FolderName) { displayName('HCM Features Manager') }
+
+def md_FolderName = hfm_FolderName + "/Manage Department"
+def md_Folder = folder(md_FolderName) { displayName('Manage Department') }
 
 // End of HFM
 

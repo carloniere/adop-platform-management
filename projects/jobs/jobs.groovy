@@ -26,10 +26,28 @@ def aftp_Folder = folder(aftp_FolderName) { displayName('Apply Feature to Projec
 def hfm_FolderName = projectFolderName + "/HCM_Features_Manager"
 def hfm_Folder = folder(hfm_FolderName) { displayName('HCM Features Manager') }
 
-def md_FolderName = hfm_FolderName + "/Manage Department"
+def md_FolderName = hfm_FolderName + "/Manage_Department"
 def md_Folder = folder(md_FolderName) { displayName('Manage Department') }
 
-// End of HFM
+// HCM Features Enablement
+
+def fe_FolderName = projectFolderName + "/HCM_Feature_Enablement"
+def fe_Folder = folder(fe_FolderName) { displayName('HCM Feature Enablement') }
+
+def wd_FolderName = fe_FolderName + "/Enable_Workforce_Development"
+def wd_Folder = folder(wd_FolderName) { displayName('Enable Workforce Development') }
+
+// HCM Feature Templates
+
+def ft_FolderName = projectFolderName + "/HCM_Feature_Templates"
+def ft_Folder = folder(ft_FolderName) { displayName('HCM Feature Templates') }
+
+// HCM Project Creation
+
+def pc_FolderName = projectFolderName + "/HCM_Project_Creation"
+def pc_Folder = folder(pc_FolderName) { displayName('HCM Project Creation') }
+
+// ADOP Cartridge Management Folder
 
 def cartridgeManagementFolderName= projectFolderName + "/Cartridge_Management"
 def cartridgeManagementFolder = folder(cartridgeManagementFolderName) { displayName('Cartridge Management') }

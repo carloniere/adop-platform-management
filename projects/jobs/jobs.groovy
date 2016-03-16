@@ -37,6 +37,9 @@ def fe_Folder = folder(fe_FolderName) { displayName('HCM Feature Enablement') }
 def wd_FolderName = fe_FolderName + "/Enable_Workforce_Development"
 def wd_Folder = folder(wd_FolderName) { displayName('Enable Workforce Development') }
 
+def mgs_FolderName = wd_FolderName + "/Manage_Goal_Setting"
+def mgs_Folder = folder(mgs_FolderName) { displayName('Manage Goal Setting') }
+
 // HCM Feature Templates
 
 def ft_FolderName = projectFolderName + "/HCM_Feature_Templates"

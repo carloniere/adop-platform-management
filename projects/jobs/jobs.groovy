@@ -29,6 +29,12 @@ def hfm_Folder = folder(hfm_FolderName) { displayName('HCM Features Manager') }
 def md_FolderName = hfm_FolderName + "/Manage_Department"
 def md_Folder = folder(md_FolderName) { displayName('Manage Department') }
 
+def cd_FolderName = hfm_FolderName + "/Create_Department"
+def cd_Folder = folder(cd_FolderName) { displayName('Create Department') }
+
+def pm_FolderName = hfm_Folder + "/Person_Management"
+def pm_Folder = folder(pm_FolderName) { displayName('Person Management')}
+
 // HCM Features Enablement
 
 def fe_FolderName = projectFolderName + "/HCM_Feature_Enablement"
